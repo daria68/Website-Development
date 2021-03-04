@@ -1,0 +1,50 @@
+<header>	
+                        <nav class="wrapper">
+							   <ul class="menu">
+								<li><a href="/">Cuprins</a></li>
+								<li><a href="/omul">Omul</a></li>
+								<li><a href="/cunoastere">Cunoaşterea</a></li>
+								<li>
+								<a href="#">Galerie</a>
+								<ul class="submenu">
+									<li><a href="/statica">Statica</a></li>
+									<li><a href="/dinamica">Dinamica</a></li>
+								</ul>
+								</li>
+								<li><a href="/inregistrare">Inregistare</a></li>
+									</ul>
+									</nav>
+						
+<% if(!locals.username){%>
+        <h2>Aici va veti loga:</h2>
+        <form id="login" method="post" action="/login" >
+
+            <label>
+
+                <div class="textbox">
+
+                <input id="i_text" type="text" placeholder="Username" name="username" value="">
+                </div>
+            </label>
+
+
+            <label>
+
+                <div class="textbox">
+
+                <input id="i_parola" type="password" placeholder="Password" name="parola" value="">
+                </div>
+            </label>
+
+            <input class="sub" type="submit" value="Login">
+        </form> 
+        <%} else {%>
+            <br>
+			<br>
+            <b style="color: #CD853F">Utilizator logat:</b><%= locals.username %>
+            <br>
+            <a href="/logout" style="color: #CD853F"> <b>Logout</b></a>
+        <%} %>
+
+	<hr/>
+</header>

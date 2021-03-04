@@ -1,0 +1,13 @@
+{"lastId":5,"filozofi":[{"id":1,"nume":"Russel","skills":"matematician", "deces":"1970", "datanastere":"05/18/1872", "PremiuNobel":"1", "Lucrari":"Elogiul inactivității,Eseuri sceptice,Istoria filosofiei occidentale"},
+{"id":2,"nume":"Noica","skills":"eseist","deces":"1987" ,"datanastere":"07/12/1909","PremiuNobel":"0" , "Lucrari":"Scrisori despre logica lui Hermes, Trei introduceri la devenirea întru ființă, Despărțirea de Goethe"},
+{"id":3,"nume":"Sarte","skills":"romancier","deces":"1980", "datanastere":"04/15/1980","PremiuNobel":"1" ,"Lucrari":"History and choice, The Analysis of Mind,The ABC of Relativity"},
+{"id":4,"nume":"Blaga","skills":"poet","deces":"1961", "datanastere":"05/06/1961","PremiuNobel":"0", "Lucrari":"Mesterul Manole, Antonn Pann, Arca lui Noe"},
+{"id":5,"nume":"Platon","skills":"eseist","deces":"348", "datanastere":"05/06/428 i.Hr","PremiuNobel":"0", "Lucrari":"Banchetul"},
+{"id":6,"nume":"Pitagora","skills":"romancier","deces":"495", "datanastere":"05/06/570 i.Hr","PremiuNobel":"0", "Lucrari":"Five climatic zones, Sphericity of the Earth"},
+{"id":7,"nume":"Schopenhauer","skills":"politician","deces":"399", "datanastere":"15/02/469 i.Hr","PremiuNobel":"0", "Lucrari":"Singurul lucru pe care-l stiu este ca nu stiu nimic"},
+{"id":8,"nume":"Husssel","skills":"istoric","deces":"1938", "datanastere":"08/04/1859","PremiuNobel":"1", "Lucrari":"Meaning and object"},
+{"id":9,"nume":"Heidegger","skills":"eseist","deces":"1976", "datanastere":"26/09/1889","PremiuNobel":"1", "Lucrari":"Treatment of Husserl, Free will"},
+{"id":10,"nume":"Bergson","skills":"romancier","deces":"1941", "datanastere":"18/10/1859","PremiuNobel":"1", "Lucrari":"Matter and Memory, Creative Evolution"},
+{"id":11,"nume":"Popper","skills":"poet","deces":"1994", "datanastere":"28/07/1902","PremiuNobel":"1", "Lucrari":"Falsiability and the problem of demarcation, The paradox of tolerance"},
+{"id":12,"nume":"Nietzsche","skills":"romancier","deces":"1961", "datanastere":"05/06/1961","PremiuNobel":"0", "Lucrari":"Will to power, Last man, God is dead"},
+{"id":13,"nume":"Schopenhauer","skills":"politician","deces":"1860", "datanastere":"22/02/1788","PremiuNobel":"0", "Lucrari":"The world as representation, Theory of perception, The world as will"}]}

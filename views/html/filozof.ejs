@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pagina principala</title>
+    <link rel="stylesheet" type="text/css" href="/css/stil_inregistrare.css"/>
+	<link type="text/css" rel="stylesheet" href="/css/stil_template.css"/>
+	<meta charset="utf-8">
+	<meta name="author" content="Ionel"/>
+	<script src="js/ejs.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body class="container">
+<%- include("../fragmente/header")  %>
+<main>
+    <h1>Secţiuni informative</h1>
+    <section id="informatii_1">
+	<p id="p1">Între cele mai semnificative învăţături ale lui Platon este cea potrivit căreia oamenii au un suflet nemuritor, care supravieţuieşte morţii corpului fizic.</p>
+	</section>
+	<section id="informatii_2">
+	<p id="p2">De la Socrate nu a rams nimic scris dar convingerile si gandurile sale au fost transmise de Platon si Xenofon</p>
+	</section>
+    <h1>JSON</h1>
+		<div class="afis" id="afisJson"></div>
+		
+		<!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+		<div class="afis" id="afisTemplate">
+    </div>
+<div id="container_butoane">
+	<button id="sorteazaC"><b>Sorteaza CRESC dupa deces</b></button>
+	<button id="sorteazaD"><b>Sorteaza DESCRESC dupa deces</b></button>
+	<button id="sorteaza_a"><b>Criteriu a</b></button>
+	<button id="sorteaza_c"><b>Criteriu c</b></button>
+	<button id="sorteaza_d"><b>Criteriu d</b></button>
+	<button id="selecteaza_nobel"><b>Sterge un anume filozof</b></button>
+	<button id="selecteaza_tanar"><b>Selecteaza filozoful decedat cel mai recent</b></button>
+	<button id="reset"><b>Reseteaza</b></button>
+	<button id="filtru_multiplu"><b>Filtreaza</b></button>
+    <label>
+            <select id="select_multiplu" multiple size="5">
+                <option value="eseist" selected>Eseist</option>
+                <option value="poet" selected>Poet</option>
+                <option value="politician" selected>Politician</option>
+                <option value="matematician" selected>Matematician</option>
+                <option value="romancier" selected>Romancier</option>
+            </select>
+        </label>
+	<button id="time_out">Salut</button>
+	</div>
+	<div id="rezultat">
+	</div>
+</main>
+
+</body>
+</html>  

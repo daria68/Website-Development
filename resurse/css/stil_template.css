@@ -1,0 +1,88 @@
+.afis{
+	border-top:5px solid #FFCC99;
+	border-bottom:5px solid #FFCC99;
+	border-left:1px solid #FFCC99;
+	border-right:1px solid #FFCC99;
+	padding:0.7em;
+	border-radius: 25px;
+}
+
+.templ_filozof{
+	border-top:5px solid #330000;
+	border-bottom:1px solid #330000;
+	border-left:1px solid #330000;
+	border-right:1px solid #330000;
+	padding:0.4em;
+	border-radius: 25px;
+	text-align:center;
+	opacity:0.6;
+}
+.templ_filozof:hover
+{
+	opacity:1.5;
+}
+
+#informatii_1, #informatii_2
+{
+	border-top:5px solid #FFCC99;
+	border-bottom:5px solid #FFCC99;
+	border-left:1px solid #FFCC99;
+	border-right:1px solid #FFCC99;
+	border-radius: 25px;
+	font-size:20px;
+	display:flex;
+	padding:0.5em;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	justify-content:center;
+}
+
+#container_butoane, #rezultat{
+	border-top:5px solid #FFCC99;
+	border-bottom:5px solid #FFCC99;
+	border-left:1px solid #FFCC99;
+	border-right:1px solid #FFCC99;
+	padding:0.7em;
+	border-radius: 25px;
+	display:flex;
+	padding:0.5em;
+	flex-wrap:wrap;
+	border-radius: 25px;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	justify-content:center;
+	font-size:25px;
+	
+}
+
+#container_butoane button{
+	width:100px;
+	margin:0.5em;
+	border-top:1px solid #FFCC99;
+	border-bottom:1px solid #FFCC99;
+	border-left:1px solid #FFCC99;
+	border-right:1px solid #FFCC99;
+	padding:0.3em;
+	border-radius: 25px;
+	min-height:3em;
+	background: #330000;
+	color:#CD853F;
+	opacity:0.5;
+}
+#container_butoane button.apasat{
+	background:#330000;
+	opacity:1;
+}
+#container_butoane button:hover{
+	background: #330000;
+	opacity:1;
+}
+
+#mesaj_aleator
+{
+	border-top:1px solid #FFCC99;
+	border-bottom:1px solid #FFCC99;
+	border-left:1px solid #FFCC99;
+	border-right:1px solid #FFCC99;
+	border-radius: 25px;
+}

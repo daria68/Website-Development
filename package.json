@@ -1,0 +1,23 @@
+{
+  "name": "proiect",
+  "version": "1.0.0",
+  "description": "site filosofie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proiect",
+    "facultate",
+    "tehnici",
+    "web"
+  ],
+  "author": "Dirstariu Daria",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2"
+  }
+}

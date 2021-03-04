@@ -1,0 +1,143 @@
+body{
+	background-image:url("neutral.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+#galerie_statica{
+	text-align:center;
+	padding-top:20px;
+	color:#330000;
+}
+
+#galerie_statica{
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#gr{
+	display:grid;
+	padding-left:150px;
+	
+}
+
+#gr>figure:nth-child(1){
+	margin-top:40px;
+}
+#gr>figure:nth-child(2){
+	margin-top:40px;
+	grid-area:1/2/2/3;
+}
+
+
+
+nav{
+  width:100%;
+  position:fixed; 
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		font-size:1rem;
+		font-weight:bold;
+		height:1.7rem;
+		line-height:1.2rem;
+		text-align:center;		
+		list-style-type:none;
+		overflow:hidden;
+	}
+
+ul.menu>li{
+	 float:left;
+	 width:19%;
+	}
+ul.submenu>li{
+	 width:100%;
+	}
+ul.menu>li{
+		position:relative;
+		border-top:1px solid #FFCC99;
+		border-bottom:1px solid #FFCC99;
+		border-left:1px solid #FFCC99;
+		border-right:1px solid #FFCC99;
+		border-radius: 25px;
+		background-color:#330000;
+		top:-37px;
+	}	
+ul.submenu>li{
+	    position:relative;
+		border-top:1px solid #FFCC99;
+		border-bottom:1px solid #FFCC99;
+		border-left:1px solid #FFCC99;
+		border-right:1px solid #FFCC99;
+		border-radius: 25px;
+		background-color:#330000;
+		
+}
+ul.menu>li>a,ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration:none;
+		color:#CD853F;
+		transition: background 4s linear; 
+		}
+ul.menu>li>a:hover{
+		overflow:visible;
+		background-color:#FFCC99;
+		transition: background 2s linear; 
+		border-radius: 25px;
+	}
+ul.submenu>li>a:hover{
+	overflow:visible;
+	background-color:#FFCC99;
+	transition: background 2s linear; 
+	border-radius: 25px;
+}
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+@media screen and (min-width:300px) and (max-width:800px){
+	ul.menu>li{
+		width:16%;
+		font-size:0.6rem;
+		top:-36px;
+	}
+	ul.menu>li>ul.submenu>li
+	{
+		width:100%;
+		font-size:0.08rem;
+	}
+	#gr{
+	display:block;
+	padding-left:0px;
+    }
+	#gr>figure:nth-child(1){
+	margin-top:40px;
+    }
+
+}
+#gr1:hover {
+	transform: scale(1.2, 1.2);
+}
+
+#gr2:hover {
+	transform: scale(1.2, 1.2);
+}
+
+#gr3:hover {
+	transform: scale(1.2, 1.2);
+}
+
+#gr4:hover {
+	transform: scale(1.2, 1.2);
+}

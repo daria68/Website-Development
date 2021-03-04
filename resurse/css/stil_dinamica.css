@@ -1,0 +1,152 @@
+body{
+	background-image:url("neutral.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+#f{
+	position:relative;
+}
+
+h1,form {
+  text-align: center;
+}
+
+#galerie_dinamica{
+	text-align:center;
+	padding-top:30px;
+	color:#330000;
+}
+
+#galerie_dinamica{
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#box_galerie{
+	display:flex;
+	top:100px;
+	margin:auto;
+}
+#box_galerie{
+	position:relative;
+	overflow:hidden;
+	border:1px solid black;
+	border-radius:25px;
+    width:475px;
+    height:300px;
+    box-sizing:content-box;
+	background-image:url("backgroundblackandwhite.jpg");
+	background-size:cover;
+}
+
+#derulant{
+	display:block;
+	position:absolute;
+	animation-name:gal_exemplu;
+	animation-direction:normal;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:18s;	
+}
+
+
+
+
+@keyframes gal_exemplu{ 
+	0%{
+    	top:0px;
+    }
+	100%{
+		top:-350%;
+	}
+}
+nav{
+  width:100%;
+  position:fixed; 
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		font-size:1rem;
+		font-weight:bold;
+		height:1.7rem;
+		line-height:1.2rem;
+		text-align:center;		
+		list-style-type:none;
+		overflow:hidden;
+	}
+
+ul.menu>li{
+	 float:left;
+	 width:19%;
+	}
+ul.submenu>li{
+	 width:100%;
+	}
+ul.menu>li{
+		position:relative;
+		border-top:1px solid #FFCC99;
+		border-bottom:1px solid #FFCC99;
+		border-left:1px solid #FFCC99;
+		border-right:1px solid #FFCC99;
+		border-radius: 25px;
+		background-color:#330000;
+		top:-25px;
+	}	
+ul.submenu>li{
+	    position:relative;
+		border-top:1px solid #FFCC99;
+		border-bottom:1px solid #FFCC99;
+		border-left:1px solid #FFCC99;
+		border-right:1px solid #FFCC99;
+		border-radius: 25px;
+		background-color:#330000;
+		
+}
+ul.menu>li>a,ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration:none;
+		color:#CD853F;
+		transition: background 4s linear; 
+		}
+ul.menu>li>a:hover{
+		overflow:visible;
+		background-color:#FFCC99;
+		transition: background 2s linear; 
+		border-radius: 25px;
+	}
+ul.submenu>li>a:hover{
+	overflow:visible;
+	background-color:#FFCC99;
+	transition: background 2s linear; 
+	border-radius: 25px;
+}
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+@media screen and (min-width:400px) and (max-width:700px){
+	ul.menu>li{
+		width:16%;
+		font-size:0.6rem;
+	}
+	ul.menu>li>ul.submenu>li
+	{
+		width:100%;
+		font-size:0.08rem;
+	}
+	
+}

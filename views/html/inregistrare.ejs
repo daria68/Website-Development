@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/poze/favicon.ico"/>
+<title>Inregistrare</title>
+<meta charset="UTF-8">
+			<meta name="description" content="O scurta istorie a filozofiei">
+				<meta name="keywords" content="">
+					<meta name="authors" content="Elena Lupsa, Gabriel Hacmac">
+					  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/stil_inregistrare.css"/>
+<script src="js/numarare.js"></script>
+</head>
+<body>
+<%- include("../fragmente/header")  %>
+
+<main>
+    <div class="afisaj">
+        <h1>Daca nu aveti deja cont, aici va veti inregistra: </h1>
+		<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form method="post" action="/inreg" class="date" id="form"> <!-- daca nu pun action atunci actionul default este pagina curenta -->
+			<p>
+			<label>
+				<h2>Username:</h2> 
+				<input type="text" name="username" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				<h2>Nume:</h2>
+				<input type="text" name="nume" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				<h2>Data nasterii:</h2> <input type="date" name="data" id="4">
+			</label>
+			</p>
+			<p>
+			<label>
+				<h2>Parola:</h2> <input type="password" name="parola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				<h2>Confirmati parola:</h2> <input type="password" name="rparola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				<h2>Email:</h2> <input type="text" name="email" value=""  size="50">
+			</label>
+			</p>
+			<p>
+			<h2>Filozofii preferati:</h2>
+			<label>
+				Constantin Noica: <input type="checkbox" name="preferati" value="Noica">
+			</label> 
+			<label>
+				Jean-Paul Sartre: <input type="checkbox" name="preferati" value="Sartre">
+			</label> 
+			<label>
+				Aristotel: <input type="checkbox" name="preferati" value="Aristotel">
+			</label>
+			<label>
+				Lucian Blaga: <input type="checkbox" name="preferati" value="Blaga">
+			</label>
+			</p>			
+			<p>		
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+    </div>
+</main>
+<%- include("../fragmente/footer")  %>
+</body>
+</html>
+
+
+
+
+
+
+

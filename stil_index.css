@@ -1,0 +1,108 @@
+body{
+	background-image:url("philosophy.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+p{
+  animation-duration: 3s;
+  animation-name: slidein;
+	animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+h1{
+	text-align:center;
+	padding-top:20px;
+	color:#330000;
+}
+p,h2,h3{
+	text-align:center;
+	color:#330000;
+}
+nav{
+  width:100%;
+  position:fixed; 
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		font-size:1rem;
+		font-weight:bold;
+		height:1.7rem;
+		line-height:1.2rem;
+		text-align:center;		
+		list-style-type:none;
+		overflow:hidden;
+	}
+
+ul.menu>li{
+	 float:left;
+	 width:19%;
+	}
+ul.submenu>li{
+	 width:100%;
+	}
+ul.menu>li{
+		position:relative;
+		border-top:1px solid #FFCC99;
+		border-bottom:1px solid #FFCC99;
+		border-left:1px solid #FFCC99;
+		border-right:1px solid #FFCC99;
+		border-radius: 25px;
+		background-color:#330000;
+		top:-37px;
+	}	
+ul.submenu>li{
+	    position:relative;
+		border-top:1px solid #FFCC99;
+		border-bottom:1px solid #FFCC99;
+		border-left:1px solid #FFCC99;
+		border-right:1px solid #FFCC99;
+		border-radius: 25px;
+		background-color:#330000;
+		
+}
+ul.menu>li>a,ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration:none;
+		color:#CD853F;
+		transition: background 4s linear; 
+		}
+ul.menu>li>a:hover{
+		overflow:visible;
+		background-color:#FFCC99;
+		transition: background 2s linear; 
+		border-radius: 25px;
+	}
+ul.submenu>li>a:hover{
+	overflow:visible;
+	background-color:#FFCC99;
+	transition: background 2s linear; 
+	border-radius: 25px;
+}
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+@media screen and (min-width:300px) and (max-width:700px){
+	ul.menu>li{
+		width:16%;
+		font-size:0.6rem;
+	}
+	ul.menu>li>ul.submenu>li
+	{
+		width:100%;
+		font-size:0.08rem;
+	}
+
+}
